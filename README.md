@@ -1,4 +1,4 @@
-# Computer vision
+# Computer vision using Deep Learning
 Computer vision work using deep learning and other algorithms
 
 ### Dr. Tirthajyoti Sarkar, Fremont, CA ([Please feel free to add me on LinkedIn here](https://www.linkedin.com/in/tirthajyoti-sarkar-2127aa7))
