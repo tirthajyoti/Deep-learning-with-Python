@@ -55,10 +55,14 @@ def compile_train_model(model,x_train, y_train, callbacks=None,
   Compiles and trains a given Keras model with the given data. 
   Assumes Adam optimizer for this implementation.
   
+  # Arguments
   learning_rate: Learning rate for the optimizer Adam
   batch_size: Batch size for the mini-batch optimization
   epochs: Number of epochs to train
   verbose: Verbosity of the training process
+  
+  # Returns
+  A copy of the model
   """
   
   model_copy = model
