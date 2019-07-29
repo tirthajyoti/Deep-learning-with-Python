@@ -1,9 +1,11 @@
 # Deep Learning with Python
-Various deep-learning code examples, (Tutorial-style) Jupyter notebooks, and projects. 
+Various deep-learning code examples, (Tutorial-style) Jupyter notebooks, and projects.
 
-Many of the Jupyter notebooks are built on Google Colab and may employ special functions exclusive to Google Colab.
+Many of the Jupyter notebooks are built on **Google Colab** and may employ special functions exclusive to Google Colab.
 
-Dr. Tirthajyoti Sarkar, Fremont, CA ([Please feel free to add me on LinkedIn here](https://www.linkedin.com/in/tirthajyoti-sarkar-2127aa7))
+Authored and maintained by Dr. Tirthajyoti Sarkar, Fremont, CA. 
+<br>([Please feel free to add me on LinkedIn here](https://www.linkedin.com/in/tirthajyoti-sarkar-2127aa7))
+
 ---
 
 ## Requirements
