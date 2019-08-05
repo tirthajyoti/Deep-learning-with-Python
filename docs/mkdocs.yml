@@ -1,0 +1,5 @@
+site_name: Deep-learning-with-Python
+nav:
+    - Home: index.md
+site_author: Tirthajyoti Sarkar
+repo_url: https://github.com/tirthajyoti/Deep-learning-with-Python/
