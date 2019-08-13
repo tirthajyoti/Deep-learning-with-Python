@@ -8,7 +8,7 @@ Various deep-learning code examples, (Tutorial-style) Jupyter notebooks, and pro
 
 Many of the Jupyter notebooks are built on **Google Colab** and may employ special functions exclusive to Google Colab.
 
-Authored and maintained by Dr. Tirthajyoti Sarkar, Fremont, CA. ([Website](https://tirthajyoti.github.io)
+Authored and maintained by Dr. Tirthajyoti Sarkar, Fremont, CA. ([Website](https://tirthajyoti.github.io))
 <br>([Please feel free to add me on LinkedIn here](https://www.linkedin.com/in/tirthajyoti-sarkar-2127aa7))
 
 ---
