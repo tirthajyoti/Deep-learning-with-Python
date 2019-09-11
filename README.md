@@ -10,6 +10,8 @@ Many of the Jupyter notebooks are built on **Google Colab** and may employ speci
 
 Authored and maintained by **Dr. Tirthajyoti Sarkar ([Website](https://tirthajyoti.github.io), [LinkedIn profile](https://www.linkedin.com/in/tirthajyoti-sarkar-2127aa7/))**
 
+Here is the **[Github Repo](https://github.com/tirthajyoti/Deep-learning-with-Python)**. 
+
 ---
 
 ## Requirements
@@ -52,6 +54,9 @@ Authored and maintained by **Dr. Tirthajyoti Sarkar ([Website](https://tirthajyo
 
 ### Bi-directional LSTM for sentiment classification
 * [Bi-directional LSTM with embedding](https://machinelearningmastery.com/develop-bidirectional-lstm-sequence-classification-python-keras/) applied to the IMDB sentiment classification task ([Here is the Notebook](https://github.com/tirthajyoti/Deep-learning-with-Python/blob/master/Notebooks/LSTM_bidirectional_IMDB_data.ipynb))
+
+### Generative adversarial network (GAN)
+Simple demo of building a GAN model from scratch using a one-dimensional algebraic function ([Here is the Notebook](https://github.com/tirthajyoti/Deep-learning-with-Python/blob/master/Notebooks/GAN_1D.ipynb))
 
 ### Scikit-learn wrapper for Keras
 * [Keras Scikit-learn wrapper](https://keras.io/scikit-learn-api/) example with 10-fold cross-validation and exhaustive grid search ([Here is the Notebook](https://github.com/tirthajyoti/Deep-learning-with-Python/blob/master/Notebooks/Keras_Scikit_Learn_wrapper.ipynb))
