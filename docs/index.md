@@ -55,5 +55,8 @@ Here is the **[Github Repo](https://github.com/tirthajyoti/Deep-learning-with-Py
 ### Bi-directional LSTM for sentiment classification
 * [Bi-directional LSTM with embedding](https://machinelearningmastery.com/develop-bidirectional-lstm-sequence-classification-python-keras/) applied to the IMDB sentiment classification task ([Here is the Notebook](https://github.com/tirthajyoti/Deep-learning-with-Python/blob/master/Notebooks/LSTM_bidirectional_IMDB_data.ipynb))
 
+### Generative adversarial network (GAN)
+Simple demo of building a GAN model from scratch using a one-dimensional algebraic function ([Here is the Notebook](https://github.com/tirthajyoti/Deep-learning-with-Python/blob/master/Notebooks/GAN_1D.ipynb))
+
 ### Scikit-learn wrapper for Keras
 * [Keras Scikit-learn wrapper](https://keras.io/scikit-learn-api/) example with 10-fold cross-validation and exhaustive grid search ([Here is the Notebook](https://github.com/tirthajyoti/Deep-learning-with-Python/blob/master/Notebooks/Keras_Scikit_Learn_wrapper.ipynb))
