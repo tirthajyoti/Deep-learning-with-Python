@@ -37,8 +37,11 @@ Here is the **[Github Repo](https://github.com/tirthajyoti/Deep-learning-with-Py
 ### Simple Conv Net
 * [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) image classification using densely connected network and 1/2/3 layer CNNs ([Here is the Notebook](https://github.com/tirthajyoti/Computer_vision/blob/master/Notebooks/Fashion_MNIST_using_CNN.ipynb)).
 
-### Using Keras `ImageGenerator`
-* _Horse or human_ image classification using Keras `ImageGenerator` and **Google colaboratory** platform ([Here is the Notebook](https://github.com/tirthajyoti/Computer_vision/blob/master/Notebooks/Horse_or_Human_with_ImageGenerator.ipynb))
+### Using Keras `ImageDataGenerator` and other utilities
+
+* _Horse or human_ image classification using Keras `ImageDataGenerator` and **Google colaboratory** platform ([Here is the Notebook](https://github.com/tirthajyoti/Computer_vision/blob/master/Notebooks/Horse_or_Human_with_ImageGenerator.ipynb))
+
+* Classification on the [flowers dataset](https://www.kaggle.com/alxmamaev/flowers-recognition) and the famous [Caltech-101 dataset](http://www.vision.caltech.edu/Image_Datasets/Caltech101/) using `fit_generator` and `flow_from_directory()` method of the `ImageDataGenerator`. Illustrates how to streamline CNN model building from a single storage of image data using these utility methods. ([Here is the Notebook](https://github.com/tirthajyoti/Deep-learning-with-Python/blob/master/Notebooks/Keras_flow_from_directory.ipynb))
 
 ### Simple demo of transfer learning
 * Simple illustration of [transfer learning](https://machinelearningmastery.com/transfer-learning-for-deep-learning/) using CIFAR-10 dataset ([Here is the Notebook](https://github.com/tirthajyoti/Deep-learning-with-Python/blob/master/Notebooks/Transfer_learning_CIFAR.ipynb))
@@ -56,7 +59,7 @@ Here is the **[Github Repo](https://github.com/tirthajyoti/Deep-learning-with-Py
 * [Bi-directional LSTM with embedding](https://machinelearningmastery.com/develop-bidirectional-lstm-sequence-classification-python-keras/) applied to the IMDB sentiment classification task ([Here is the Notebook](https://github.com/tirthajyoti/Deep-learning-with-Python/blob/master/Notebooks/LSTM_bidirectional_IMDB_data.ipynb))
 
 ### Generative adversarial network (GAN)
-Simple demo of building a GAN model from scratch using a one-dimensional algebraic function ([Here is the Notebook](https://github.com/tirthajyoti/Deep-learning-with-Python/blob/master/Notebooks/GAN_1D.ipynb))
+* Simple demo of building a GAN model from scratch using a one-dimensional algebraic function ([Here is the Notebook](https://github.com/tirthajyoti/Deep-learning-with-Python/blob/master/Notebooks/GAN_1D.ipynb))
 
 ### Scikit-learn wrapper for Keras
 * [Keras Scikit-learn wrapper](https://keras.io/scikit-learn-api/) example with 10-fold cross-validation and exhaustive grid search ([Here is the Notebook](https://github.com/tirthajyoti/Deep-learning-with-Python/blob/master/Notebooks/Keras_Scikit_Learn_wrapper.ipynb))
