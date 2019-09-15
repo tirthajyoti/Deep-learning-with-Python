@@ -23,15 +23,19 @@ class myCallback(tf.keras.callbacks.Callback):
         print("\nAccuracy not high enough. Starting another epoch...\n")
 
 
-def build_model(num_layers=1, architecture=[32],act_func='relu', 
+def build_classification_model(num_layers=1, architecture=[32],act_func='relu', 
                 input_shape=(28,28), output_class=10):
   """
   Builds a densely connected neural network model from user input
-  num_layers: Number of hidden layers
-  architecture: Architecture of the hidden layers (densely connected)
-  act_func: Activation function. Could be 'relu', 'sigmoid', or 'tanh'.
-  input_shape: Dimension of the input vector
-  output_class: Number of classes in the output vector
+  
+  Arguments
+          num_layers: Number of hidden layers
+          architecture: Architecture of the hidden layers (densely connected)
+          act_func: Activation function. Could be 'relu', 'sigmoid', or 'tanh'.
+          input_shape: Dimension of the input vector
+          output_class: Number of classes in the output vector
+  Returns
+          A neural net (Keras) model for classification
   """
   layers=[tf.keras.layers.Flatten(input_shape=input_shape)]
   if act_func=='relu':
@@ -48,20 +52,49 @@ def build_model(num_layers=1, architecture=[32],act_func='relu',
   model = tf.keras.models.Sequential(layers)
   return model
 
+def build_regression_model(input_neurons=10,input_dim=1,num_layers=1, architecture=[32],act_func='relu'):
+  """
+  Builds a densely connected neural network model from user input
+  
+  Arguments
+          num_layers: Number of hidden layers
+          architecture: Architecture of the hidden layers (densely connected)
+          act_func: Activation function. Could be 'relu', 'sigmoid', or 'tanh'.
+          input_shape: Dimension of the input vector
+  Returns
+          A neural net (Keras) model for regression
+  """
+  if act_func=='relu':
+    activation=tf.nn.relu
+  elif act_func=='sigmoid':
+    activation=tf.nn.sigmoid
+  elif act_func=='tanh':
+    activation=tf.nn.tanh
+  
+  layers=[tf.keras.layers.Dense(input_neurons,input_dim=input_dim,activation=activation)]
+     
+  for i in range(num_layers):
+    layers.append(tf.keras.layers.Dense(architecture[i], activation=activation))
+  layers.append(tf.keras.layers.Dense(1))
+  
+  model = tf.keras.models.Sequential(layers)
+  return model
 
-def compile_train_model(model,x_train, y_train, callbacks=None,
+
+def compile_train_classification_model(model,x_train, y_train, callbacks=None,
                         learning_rate=0.001,batch_size=1,epochs=10,verbose=0):
   """
   Compiles and trains a given Keras model with the given data. 
   Assumes Adam optimizer for this implementation.
+  Assumes categorical cross-entropy loss.
   
-  # Arguments
-  learning_rate: Learning rate for the optimizer Adam
-  batch_size: Batch size for the mini-batch optimization
-  epochs: Number of epochs to train
-  verbose: Verbosity of the training process
+  Arguments
+          learning_rate: Learning rate for the optimizer Adam
+          batch_size: Batch size for the mini-batch optimization
+          epochs: Number of epochs to train
+          verbose: Verbosity of the training process
   
-  # Returns
+  Returns
   A copy of the model
   """
   
@@ -70,8 +103,41 @@ def compile_train_model(model,x_train, y_train, callbacks=None,
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
   
-  model_copy.fit(x_train, y_train, epochs=epochs, batch_size=batch_size,
+  if callbacks!=None:
+    model_copy.fit(x_train, y_train, epochs=epochs, batch_size=batch_size,
                  callbacks=[callbacks],verbose=verbose)
+  else:
+    model_copy.fit(x_train, y_train, epochs=epochs, batch_size=batch_size,
+                 verbose=verbose)
+  return model_copy
+
+def compile_train_regression_model(model,x_train, y_train, callbacks=None,
+                        learning_rate=0.001,batch_size=1,epochs=10,verbose=0):
+  """
+  Compiles and trains a given Keras model with the given data for regression. 
+  Assumes Adam optimizer for this implementation.
+  Assumes mean-squared-error loss
+  
+  Arguments
+          learning_rate: Learning rate for the optimizer Adam
+          batch_size: Batch size for the mini-batch operation
+          epochs: Number of epochs to train
+          verbose: Verbosity of the training process
+  
+  Returns
+  A copy of the model
+  """
+  
+  model_copy = model
+  model_copy.compile(optimizer=tf.keras.optimizers.Adam(lr=learning_rate),
+              loss='mean_squared_error',
+              metrics=['accuracy'])
+  if callbacks!=None:
+    model_copy.fit(x_train, y_train, epochs=epochs, batch_size=batch_size,
+                 callbacks=[callbacks],verbose=verbose)
+  else:
+    model_copy.fit(x_train, y_train, epochs=epochs, batch_size=batch_size,
+                 verbose=verbose)
   return model_copy
 
 
