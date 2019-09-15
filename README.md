@@ -42,12 +42,14 @@ Here is the **[Github Repo](https://github.com/tirthajyoti/Deep-learning-with-Py
 
 ### Using Keras `ImageDataGenerator` and other utilities
 
-* _Horse or human_ image classification using Keras `ImageDataGenerator` and **Google colaboratory** platform ([Here is the Notebook](https://github.com/tirthajyoti/Computer_vision/blob/master/Notebooks/Horse_or_Human_with_ImageGenerator.ipynb))
+* _Horse or human_ image classification using Keras `ImageDataGenerator` and **Google colaboratory** platform. ([Here is the Notebook](https://github.com/tirthajyoti/Computer_vision/blob/master/Notebooks/Horse_or_Human_with_ImageGenerator.ipynb))
 
 * Classification on the [flowers dataset](https://www.kaggle.com/alxmamaev/flowers-recognition) and the famous [Caltech-101 dataset](http://www.vision.caltech.edu/Image_Datasets/Caltech101/) using `fit_generator` and `flow_from_directory()` method of the `ImageDataGenerator`. Illustrates how to streamline CNN model building from a single storage of image data using these utility methods. ([Here is the Notebook](https://github.com/tirthajyoti/Deep-learning-with-Python/blob/master/Notebooks/Keras_flow_from_directory.ipynb))
 
-### Simple demo of transfer learning
+###  Transfer learning
 * Simple illustration of [transfer learning](https://machinelearningmastery.com/transfer-learning-for-deep-learning/) using CIFAR-10 dataset ([Here is the Notebook](https://github.com/tirthajyoti/Deep-learning-with-Python/blob/master/Notebooks/Transfer_learning_CIFAR.ipynb))
+
+* Transfer learning with the famous [Inception v3 model](https://www.analyticsvidhya.com/blog/2018/10/understanding-inception-network-from-scratch/) - building a classifier of pneumonia from chest X-ray images. ([Here is the Notebook](https://github.com/tirthajyoti/Deep-learning-with-Python/blob/master/Notebooks/Transfer-learning-InceptionV3.ipynb))
 
 ### Adding object-oriented programming style to deep learning workflow
 * Adding simple [Object-oriented Programming (OOP)](https://realpython.com/python3-object-oriented-programming/) principle to your deep learning workflow ([Here is the Notebook](https://github.com/tirthajyoti/Computer_vision/blob/master/Notebooks/OOP_principle_deep_learning.ipynb)).
