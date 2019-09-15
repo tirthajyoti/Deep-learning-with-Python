@@ -1,4 +1,8 @@
 # Notebooks
+
+### Deep learning vs. linear model
+* We show a nonlinear function approximation task performed by linear model (polynomial degree) and a simple 1/2 hidden layer (densely connected) neural net to illustrate the difference and the capacity of deep neural nets to take advantage of larger datasets ([Here is the Notebook](https://github.com/tirthajyoti/Deep-learning-with-Python/blob/master/Notebooks/Function%20approximation%20by%20linear%20model%20and%20deep%20network.ipynb)).
+
 ### Simple Conv Net
 * [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) image classification using densely connected network and 1/2/3 layer CNNs ([Here is the Notebook](https://github.com/tirthajyoti/Computer_vision/blob/master/Notebooks/Fashion_MNIST_using_CNN.ipynb)).
 
