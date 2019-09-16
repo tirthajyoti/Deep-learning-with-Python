@@ -22,7 +22,7 @@ class myCallback(tf.keras.callbacks.Callback):
     def on_epoch_end(self, epoch, logs={}):
         if logs.get("acc") > self.acc_threshold:
             if self.print_msg:
-                print("\nReached {}% accuracy so cancelling the training!".format(acc_threshold))
+                print("\nReached {}% accuracy so cancelling the training!".format(self.acc_threshold))
             self.model.stop_training = True
         else:
             if self.print_msg:
