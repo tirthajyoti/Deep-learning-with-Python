@@ -36,7 +36,7 @@ Here is the **[Github Repo](https://github.com/tirthajyoti/Deep-learning-with-Py
 
 I created a utility function file called `DL_utils.py` in the `utils` directory under `Notebooks`. We use functions from this module whenever possible in the Jupyter notebooks.
 
-You can download the module from here: [DL-Utility-Module](https://github.com/tirthajyoti/Deep-learning-with-Python/blob/master/Notebooks/utils/DL_utils.py)
+You can download the module (raw Python file) from here: [DL-Utility-Module](https://raw.githubusercontent.com/tirthajyoti/Deep-learning-with-Python/master/Notebooks/utils/DL_utils.py)
 
 ## Notebooks
 
