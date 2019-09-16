@@ -179,8 +179,8 @@ def train_CNN(train_directory,target_size=(256,256),
               classes=None,batch_size=128,num_classes=2,
               num_epochs=20,verbose=0):
     """
-    Trains a conv net for the flowers dataset with a 5-class classifiction output
-    Also provides suitable arguments for extending it to other similar apps
+    Trains a conv net for a given dataset contained within a training directory.
+    Users can just supply the path of the training directory and get back a fully trained, 5-layer, convolutional network.
     
     Arguments:
             train_directory: The directory where the training images are stored in separate folders.
