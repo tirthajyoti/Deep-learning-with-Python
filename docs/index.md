@@ -57,6 +57,9 @@ You can download the module (raw Python file) from here: [DL-Utility-Module](htt
 
 * Transfer learning with the famous [Inception v3 model](https://www.analyticsvidhya.com/blog/2018/10/understanding-inception-network-from-scratch/) - building a classifier of pneumonia from chest X-ray images. ([Here is the Notebook](https://github.com/tirthajyoti/Deep-learning-with-Python/blob/master/Notebooks/Transfer-learning-InceptionV3.ipynb))
 
+### Activation maps
+* We illustrate how to show the activation maps of various layers in a deep CNN model with just a couple of lines of code using `Keract` library. ([Here is the Notebook](https://github.com/tirthajyoti/Deep-learning-with-Python/blob/master/Notebooks/Keract-activation.ipynb)) 
+
 ### Adding object-oriented programming style to deep learning workflow
 * Adding simple [Object-oriented Programming (OOP)](https://realpython.com/python3-object-oriented-programming/) principle to your deep learning workflow ([Here is the Notebook](https://github.com/tirthajyoti/Computer_vision/blob/master/Notebooks/OOP_principle_deep_learning.ipynb)).
 
