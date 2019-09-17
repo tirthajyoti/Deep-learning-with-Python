@@ -11,15 +11,15 @@ import matplotlib.pyplot as plt
 
 
 class myCallback(tf.keras.callbacks.Callback):
-    """
+  """
   User can pass on the desired accuracy threshold while creating an instance of the class
   """
 
-    def __init__(self, acc_threshold=0.9, print_msg=True):
+  def __init__(self, acc_threshold=0.9, print_msg=True):
         self.acc_threshold = acc_threshold
         self.print_msg = print_msg
 
-    def on_epoch_end(self, epoch, logs={}):
+  def on_epoch_end(self, epoch, logs={}):
         if logs.get("acc") > self.acc_threshold:
             if self.print_msg:
                 print("\nReached {}% accuracy so cancelling the training!".format(self.acc_threshold))
@@ -29,7 +29,7 @@ class myCallback(tf.keras.callbacks.Callback):
                 print("\nAccuracy not high enough. Starting another epoch...\n")
 
 
-def build_classification_model(
+  def build_classification_model(
     num_layers=1,
     architecture=[32],
     act_func="relu",
