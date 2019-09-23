@@ -66,8 +66,10 @@ You can download the module (raw Python file) from here: [DL-Utility-Module](htt
 ### Keras `Callbacks` using ResNet
 * [ResNet](https://medium.com/@14prakash/understanding-and-implementing-architectures-of-resnet-and-resnext-for-state-of-the-art-image-cf51669e1624) on [CIFAR-10 dataset](https://www.cs.toronto.edu/~kriz/cifar.html), showing how to use Keras Callbacks classes like `ModelCheckpoint`, `LearningRateScheduler`, and `ReduceLROnPlateau`. You can also change a single parameter to generate ResNet of various depths. ([Here is the Notebook](https://github.com/tirthajyoti/Deep-learning-with-Python/blob/master/Notebooks/ResNet-on-CIFAR10.ipynb)).
 
-### Simple RNN
-* Time series prediction using simple RNN (a single RNN layer followed by a densely connected layer). We show that a complicated time-series signal is correctly predicted by a simple RNN even when trained with only 25% of the data. ([Here is the Notebook](https://github.com/tirthajyoti/Deep-learning-with-Python/blob/master/Notebooks/SimpleRNN-time-series.ipynb)) 
+### Recurrent Neural Networks (RNN)
+* Time series prediction using simple RNN (a single RNN layer followed by a densely connected layer). We show that a complicated time-series signal is correctly predicted by a simple RNN even when trained with only 25% of the data. ([Here is the Notebook](https://github.com/tirthajyoti/Deep-learning-with-Python/blob/master/Notebooks/SimpleRNN-time-series.ipynb))
+
+* San Francisco city weather prediction using a simple RNN model - prediction of long-term trend of temperature, humidity, and pressure using a RNN model trained on limited data points ([Here is the Notebook](https://github.com/tirthajyoti/Deep-learning-with-Python/blob/master/Notebooks/Weather-RNN.ipynb)).
 
 ### Text generation using LSTM
 * Automatic text generation (based on simple character vectors) using [LSTM network](https://colah.github.io/posts/2015-08-Understanding-LSTMs/). Play with character sequence length, LSTM architecture, and hyperparameters to generate synthetic texts based on a particular author's style! ([Here is the Notebook](https://github.com/tirthajyoti/Deep-learning-with-Python/blob/master/Notebooks/LSTM_text_gen_Dickens.ipynb)).
