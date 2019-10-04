@@ -11,32 +11,35 @@ import matplotlib.pyplot as plt
 
 
 class myCallback(tf.keras.callbacks.Callback):
-  """
+    """
   User can pass on the desired accuracy threshold while creating an instance of the class
   """
 
-  def __init__(self, acc_threshold=0.9, print_msg=True):
+    def __init__(self, acc_threshold=0.9, print_msg=True):
         self.acc_threshold = acc_threshold
         self.print_msg = print_msg
 
-  def on_epoch_end(self, epoch, logs={}):
+    def on_epoch_end(self, epoch, logs={}):
         if logs.get("acc") > self.acc_threshold:
             if self.print_msg:
-                print("\nReached {}% accuracy so cancelling the training!".format(self.acc_threshold))
+                print(
+                    "\nReached {}% accuracy so cancelling the training!".format(
+                        self.acc_threshold
+                    )
+                )
             self.model.stop_training = True
         else:
             if self.print_msg:
                 print("\nAccuracy not high enough. Starting another epoch...\n")
 
-
-  def build_classification_model(
-    num_layers=1,
-    architecture=[32],
-    act_func="relu",
-    input_shape=(28, 28),
-    output_class=10,
-):
-    """
+    def build_classification_model(
+        num_layers=1,
+        architecture=[32],
+        act_func="relu",
+        input_shape=(28, 28),
+        output_class=10,
+    ):
+        """
   Builds a densely connected neural network model from user input
   
   Arguments
@@ -48,20 +51,20 @@ class myCallback(tf.keras.callbacks.Callback):
   Returns
           A neural net (Keras) model for classification
   """
-    layers = [tf.keras.layers.Flatten(input_shape=input_shape)]
-    if act_func == "relu":
-        activation = tf.nn.relu
-    elif act_func == "sigmoid":
-        activation = tf.nn.sigmoid
-    elif act_func == "tanh":
-        activation = tf.nn.tanh
+        layers = [tf.keras.layers.Flatten(input_shape=input_shape)]
+        if act_func == "relu":
+            activation = tf.nn.relu
+        elif act_func == "sigmoid":
+            activation = tf.nn.sigmoid
+        elif act_func == "tanh":
+            activation = tf.nn.tanh
 
-    for i in range(num_layers):
-        layers.append(tf.keras.layers.Dense(architecture[i], activation=tf.nn.relu))
-    layers.append(tf.keras.layers.Dense(output_class, activation=tf.nn.softmax))
+        for i in range(num_layers):
+            layers.append(tf.keras.layers.Dense(architecture[i], activation=tf.nn.relu))
+        layers.append(tf.keras.layers.Dense(output_class, activation=tf.nn.softmax))
 
-    model = tf.keras.models.Sequential(layers)
-    return model
+        model = tf.keras.models.Sequential(layers)
+        return model
 
 
 def build_regression_model(
