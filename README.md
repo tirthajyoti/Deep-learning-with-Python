@@ -4,7 +4,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/tirthajyoti/Deep-Learning-with-Python/pulls)
 
 # Deep Learning with Python
-Collection of Deep Learning (DL) code examples, tutorial-style Jupyter notebooks, and projects. 
+Collection of a variety of Deep Learning (DL) code examples, tutorial-style Jupyter notebooks, and projects. 
 
 Many of the Jupyter notebooks are built on **[Google Colab](https://colab.research.google.com/)** and may employ special functions exclusive to Google Colab (for example uploading data or pulling data directly from a remote repo using standard Linux commands).
 
