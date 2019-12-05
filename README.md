@@ -8,9 +8,11 @@ Collection of a variety of Deep Learning (DL) code examples, tutorial-style Jupy
 
 Many of the Jupyter notebooks are built on **[Google Colab](https://colab.research.google.com/)** and may employ special functions exclusive to Google Colab (for example uploading data or pulling data directly from a remote repo using standard Linux commands).
 
-Authored and maintained by **Dr. Tirthajyoti Sarkar ([Website](https://tirthajyoti.github.io), [LinkedIn profile](https://www.linkedin.com/in/tirthajyoti-sarkar-2127aa7/))**
+Here is the **[Github Repo](https://github.com/tirthajyoti/Deep-learning-with-Python)**.
 
-Here is the **[Github Repo](https://github.com/tirthajyoti/Deep-learning-with-Python)**. 
+---
+
+Authored and maintained by **Dr. Tirthajyoti Sarkar ([Website](https://tirthajyoti.github.io), [LinkedIn profile](https://www.linkedin.com/in/tirthajyoti-sarkar-2127aa7/))**
 
 ---
 
