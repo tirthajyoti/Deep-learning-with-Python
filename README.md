@@ -6,7 +6,7 @@
 # Deep Learning with Python ([Website](https://dl-with-python.readthedocs.io/en/latest/))
 Collection of a variety of Deep Learning (DL) code examples, tutorial-style Jupyter notebooks, and projects. 
 
-Many of the Jupyter notebooks are built on **[Google Colab](https://colab.research.google.com/)** and may employ special functions exclusive to Google Colab (for example uploading data or pulling data directly from a remote repo using standard Linux commands).
+Quite a few of the Jupyter notebooks are built on **[Google Colab](https://colab.research.google.com/)** and may employ special functions exclusive to Google Colab (for example uploading data or pulling data directly from a remote repo using standard Linux commands).
 
 Here is the **[Github Repo](https://github.com/tirthajyoti/Deep-learning-with-Python)**.
 
