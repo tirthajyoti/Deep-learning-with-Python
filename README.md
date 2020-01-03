@@ -34,11 +34,17 @@ Authored and maintained by **Dr. Tirthajyoti Sarkar ([Website](https://tirthajyo
 
 ---
 
-## Utility function
+## Utility modules
 
+### Utility module for example notebooks
 I created a utility function file called `DL_utils.py` in the `utils` directory under `Notebooks`. We use functions from this module whenever possible in the Jupyter notebooks.
 
 You can download the module (raw Python file) from here: [DL-Utility-Module](https://raw.githubusercontent.com/tirthajyoti/Deep-learning-with-Python/master/Notebooks/utils/DL_utils.py)
+
+### General-purpose regression module (for tabular dataset)
+I also implemented a general-purpose trainer module (`NN_trainer.py`) for regression task with tabular datasets. The idea is that you can simply read a dataset (e.g. a CSV file), choose the input and target variables, build a densely-connected neural net, train, and predict. The module gives you back a prediction function (trained) which can be used for any further prediction, analytics, or optimization task. 
+
+Check out the module [here](https://github.com/tirthajyoti/Deep-learning-with-Python/blob/master/utils/NN_trainer.py) and an example notebook here.
 
 ## Notebooks
 
