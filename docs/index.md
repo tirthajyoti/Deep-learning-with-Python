@@ -3,14 +3,16 @@
 [![GitHub stars](https://img.shields.io/github/stars/tirthajyoti/Deep-Learning-with-Python.svg)](https://github.com/tirthajyoti/Deep-Learning-with-Python/stargazers)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/tirthajyoti/Deep-Learning-with-Python/pulls)
 
-# Deep Learning with Python
-Collection of deep-learning code examples, tutorial-style Jupyter notebooks, and projects. 
+# Deep Learning with Python ([Website](https://dl-with-python.readthedocs.io/en/latest/))
+Collection of a variety of Deep Learning (DL) code examples, tutorial-style Jupyter notebooks, and projects. 
 
-Many of the Jupyter notebooks are built on **[Google Colab](https://colab.research.google.com/)** and may employ special functions exclusive to Google Colab (for example uploading data or pulling data directly from a remote repo using standard Linux commands).
+Quite a few of the Jupyter notebooks are built on **[Google Colab](https://colab.research.google.com/)** and may employ special functions exclusive to Google Colab (for example uploading data or pulling data directly from a remote repo using standard Linux commands).
+
+Here is the **[Github Repo](https://github.com/tirthajyoti/Deep-learning-with-Python)**.
+
+---
 
 Authored and maintained by **Dr. Tirthajyoti Sarkar ([Website](https://tirthajyoti.github.io), [LinkedIn profile](https://www.linkedin.com/in/tirthajyoti-sarkar-2127aa7/))**
-
-Here is the **[Github Repo](https://github.com/tirthajyoti/Deep-learning-with-Python)**. 
 
 ---
 
@@ -32,16 +34,25 @@ Here is the **[Github Repo](https://github.com/tirthajyoti/Deep-learning-with-Py
 
 ---
 
-## Utility function
+## Utility modules
 
+### Utility module for example notebooks
 I created a utility function file called `DL_utils.py` in the `utils` directory under `Notebooks`. We use functions from this module whenever possible in the Jupyter notebooks.
 
 You can download the module (raw Python file) from here: [DL-Utility-Module](https://raw.githubusercontent.com/tirthajyoti/Deep-learning-with-Python/master/Notebooks/utils/DL_utils.py)
+
+### General-purpose regression module (for tabular dataset)
+I also implemented a general-purpose trainer module (`NN_trainer.py`) for regression task with tabular datasets. The idea is that you can simply read a dataset (e.g. a CSV file), choose the input and target variables, build a densely-connected neural net, train, and predict. The module gives you back a prediction function (trained) which can be used for any further prediction, analytics, or optimization task. 
+
+Check out the module [here](https://github.com/tirthajyoti/Deep-learning-with-Python/blob/master/utils/NN_trainer.py) and an example notebook [here](https://github.com/tirthajyoti/Deep-learning-with-Python/blob/master/Notebooks/Demo_general_purpose_regression_module.ipynb).
 
 ## Notebooks
 
 ### Deep learning vs. linear model
 * We show a nonlinear function approximation task performed by linear model (polynomial degree) and a simple 1/2 hidden layer (densely connected) neural net to illustrate the difference and the capacity of deep neural nets to take advantage of larger datasets ([Here is the Notebook](https://github.com/tirthajyoti/Deep-learning-with-Python/blob/master/Notebooks/Function%20approximation%20by%20linear%20model%20and%20deep%20network.ipynb)).
+
+### Demo of a general-purpose regression module
+* We implemented a general-purpose trainer module for regression task with tabular datasets. The idea is that you can simply read a dataset (e.g. a CSV file), choose the input and target variables, build a densely-connected neural net, train, predict, and save the model for deployment. This the demo notebook for that module ([Here is the Notebook](https://github.com/tirthajyoti/Deep-learning-with-Python/blob/master/Notebooks/Demo_general_purpose_regression_module.ipynb)).
 
 ### Simple Conv Net
 * [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) image classification using densely connected network and 1/2/3 layer CNNs ([Here is the Notebook](https://github.com/tirthajyoti/Computer_vision/blob/master/Notebooks/Fashion_MNIST_using_CNN.ipynb)).
