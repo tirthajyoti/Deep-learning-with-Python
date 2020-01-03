@@ -100,13 +100,16 @@ class Trainer(object):
             if df1[c].nunique() == 1:
                 cols_to_be_dropped.append(c)
         df2 = df1.drop(cols_to_be_dropped, axis=1)
-        if len(cols_to_be_dropped) > 0:
+        if len(cols_to_be_dropped) == 0:
+            print("Nothing to be dropped")
+        if len(cols_to_be_dropped) == 1:
+            print("Dropped the following column:", cols_to_be_dropped[0])
+        if len(cols_to_be_dropped) > 1:
             print("Dropped the following columns:", end=" ")
             for i in cols_to_be_dropped[:-1]:
                 print(i, end=", ")
             print("and " + cols_to_be_dropped[-1], end=".")
-        else:
-            print("Nothing to be dropped")
+            
             df2 = df1
         self.df = df2
 
@@ -496,14 +499,17 @@ class Trainer(object):
 
         return round(error,3)
 
-    def save_model(self):
+    def save_model(self,filename=None):
         """
         Saves the fitted model in a h5 file
         """
         if self.fitted_:
             model = self.model
-            var = str(self.output_var)
-            filename = var + "_model" + ".h5"
+            if filename is not None:
+                filename = filename
+            else:
+                var = str(self.output_var)
+                filename = "model_" + var + ".h5"
             model.save(filename)
         else:
             print("Nothing to be saved. Model not fitted yet!")
