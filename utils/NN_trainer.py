@@ -5,10 +5,6 @@ class Trainer(object):
     Requirements: Numpy, Pandas, Matplotlib, Scikit-learn, Keras (TensorFlow)
     """
 
-    import numpy as np
-    import matplotlib.pyplot as plt
-    import pandas as pd
-
     def __init__(self):
         """
         Initialization
@@ -111,6 +107,23 @@ class Trainer(object):
             print("and " + cols_to_be_dropped[-1], end=".")
             
             df2 = df1
+        self.df = df2
+
+    def show_missing(self):
+        """
+        Shows how many missing values are there
+        """
+        print("The following table shows the number of missing values in the dataset (by the features)\n")
+        print(self.df.isna().sum())
+
+    def drop_missing(self):
+        """
+        Drops rows of data which have missing values.
+        This method does not return a DataFrame but modifies the internal DataFrame.
+        """
+        df1 = self.df
+        df2 = df1.dropna(axis=0)
+
         self.df = df2
 
     def set_outputs(self, output_cols=None):
@@ -550,7 +563,11 @@ class Trainer(object):
             print("No model has been built yet!")
             return None
 
-        d = self.model.get_config()['layers']
+        config = self.model.get_config()
+        if type(config)==dict:
+            d = config['layers']
+        else:
+            d = config
         num_layers = len(d)
         total_param = self.model.count_params()
         print("Here is the model description")
