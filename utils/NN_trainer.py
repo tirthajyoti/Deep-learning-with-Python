@@ -40,13 +40,29 @@ class Trainer(object):
         """
         return "Hello, I am a neural net trainer!"
 
-    def read_csv(self, file):
+   def read_csv(self, file,**kargs):
         """
-        Reads a CSV file into a Pandas DataFrame 
+        Reads a CSV file into a Pandas DataFrame
+        You can use all the usual read_csv keywords 
+        e.g. reading only first few rows or choosing a specific delimiter
         """
         from pandas import read_csv
 
-        df = read_csv(file)
+        df = read_csv(file,**kargs)
+        self.df = df
+        
+        return self.df
+    
+    def read_html(self, url,**kargs):
+        """
+        Reads a HTML table into the internal (Pandas) DataFrame
+        (For now) this only works for a single table on the HTML page.
+        """
+        from pandas import read_html
+
+        df = read_html(url,**kargs)[0]
+        if 'Unnamed: 0' in df.columns:
+            df.drop('Unnamed: 0',axis=1,inplace=True)
         self.df = df
         
         return self.df
