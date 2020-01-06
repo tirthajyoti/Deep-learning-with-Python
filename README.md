@@ -12,7 +12,8 @@ Here is the **[Github Repo](https://github.com/tirthajyoti/Deep-learning-with-Py
 
 ---
 
-Authored and maintained by **Dr. Tirthajyoti Sarkar ([Website](https://tirthajyoti.github.io), [LinkedIn profile](https://www.linkedin.com/in/tirthajyoti-sarkar-2127aa7/))**
+Authored and maintained by **Dr. Tirthajyoti Sarkar ([Website](https://tirthajyoti.github.io))**. 
+<br>Here is my **[LinkedIn profile](https://www.linkedin.com/in/tirthajyoti-sarkar-2127aa7/)**
 
 ---
 
